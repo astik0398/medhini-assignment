@@ -47,17 +47,157 @@ state, guiding you towards a clearer understanding of your wellness journey.
     <br />
     <p style={{marginBottom:'20px'}}>But the stress we encounter daily impacts all seven chakras. Click on each to explore and realign.</p>
   </Description>
-  
-  <ChakraIcons style={{position: 'relative', height: '400px', marginBottom: '40px', marginTop:'50px'}}>
-    <img style={{position: 'absolute', top:'-20px', left:'50%', transform: 'translateX(-50%)'}} width={'150px'} src={image_01} />
-    <img style={{position: 'absolute', top: '-30px', left:'60%'}} width={'150px'} src={image_02} />
-    <img style={{position: 'absolute', top: '-20px', left:'30%'}} width={'150px'} src={image_03} />
-    <img style={{position: 'absolute', top: '200px', left:'85%', border:'2px solid red'}} width={'150px'} src={image_04} />
-    <img style={{position: 'absolute', top: '200px', left:'15%', border:'2px solid green'}} width={'150px'} src={image_05} />
-    <img style={{position: 'absolute', top: '100px', left:'55%', border:'2px solid white'}} width={'150px'} src={image_06} />
-    <img style={{position: 'absolute', top: '-180px', left:'50%',transform: 'translateX(-50%)', border:'2px solid yellow'}} width={'150px'} src={image_07} />
-    <img style={{position: 'absolute', top:'100px', left:'50%', transform: 'translateX(-50%)', border:'2px solid blue'}} width={'150px'} src={image_08} />
-  </ChakraIcons>
+
+  <div
+      style={{
+        position: "relative",
+        width: "400px",
+        height: "400px",
+        margin: "0 auto",
+      }}
+    >
+      <div
+        style={{
+          position: "absolute",
+          width: "80px",
+          height: "80px",
+          borderRadius: "50%",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          top: "0",
+          left: "50%",
+          transform: "translateX(-50%)",
+        }}
+      >
+        <img width={'120px'} height={'120px'} src={image_02}/>
+      </div>
+      <div
+        style={{
+          position: "absolute",
+          width: "80px",
+          height: "80px",
+          borderRadius: "50%",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          top: "15%",
+          right: "0",
+        }}
+      >
+        <img width={'120px'} height={'120px'} src={image_03}/>
+      </div>
+      <div
+        style={{
+          position: "absolute",
+          width: "80px",
+          height: "80px",
+          borderRadius: "50%",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          top: "50%",
+          right: "0",
+          transform: "translateY(-50%)",
+        }}
+      >
+        <img width={'150px'} height={'120px'} src={image_04}/>
+      </div>
+      <div
+        style={{
+          position: "absolute",
+          width: "80px",
+          height: "80px",
+          backgroundColor: "#e3c3b5",
+          borderRadius: "50%",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          bottom: "15%",
+          right: "0",
+        }}
+      >
+         <img width={'150px'} height={'120px'} src={image_05}/>
+      </div>
+      <div
+        style={{
+          position: "absolute",
+          width: "80px",
+          height: "80px",
+          borderRadius: "50%",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          bottom: "0",
+          left: "50%",
+          transform: "translateX(-50%)",
+        }}
+      >
+        <img width={'150px'} height={'120px'} src={image_06}/>
+      </div>
+      <div
+        style={{
+          position: "absolute",
+          width: "80px",
+          height: "80px",
+          borderRadius: "50%",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          bottom: "15%",
+          left: "0",
+        }}
+      >
+        <img width={'150px'} height={'120px'} src={image_07}/>
+      </div>
+      <div
+        style={{
+          position: "absolute",
+          width: "80px",
+          height: "80px",
+          borderRadius: "50%",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          top: "50%",
+          left: "0",
+          transform: "translateY(-50%)",
+        }}
+      >
+        <img width={'150px'} height={'120px'} src={image_08}/>
+      </div>
+      <div
+        style={{
+          position: "absolute",
+          width: "80px",
+          height: "80px",
+          borderRadius: "50%",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          top: "15%",
+          left: "0",
+        }}
+      >
+        <img width={'150px'} height={'120px'} src={image_03}/>
+      </div>
+      <div
+        style={{
+          position: "absolute",
+          width: "100px",
+          height: "100px",
+          borderRadius: "50%",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+        }}
+      >
+        <img width={'150px'} height={'120px'} src={image_01}/>
+      </div>
+    </div>
 
 </ChakrasSection>
 
@@ -68,20 +208,25 @@ state, guiding you towards a clearer understanding of your wellness journey.
           <EmailInput type="email" placeholder="Enter your email" />
           <SignUpButton>Sign Up</SignUpButton>
         </InputContainer>
+        <p>That means if you order now.</p>
       </WaitlistSection>
 
-      <Footer>
-        <FooterText>Made with ❤️ in India</FooterText>
-        <FooterLinks>
+      <hr/>
+      {/* <FooterLinks>
           <FooterLink href="#">About Us</FooterLink>
           <FooterLink href="#">Blogs</FooterLink>
           <FooterLink href="#">Your Privacy</FooterLink>
           <FooterLink href="#">Terms & Conditions</FooterLink>
           <FooterLink href="#">Get in touch with us</FooterLink>
-        </FooterLinks>
+        </FooterLinks> */}
+      <hr/>
+
+      <Footer>
+        <FooterText>Made with ❤️ in India</FooterText>
         <SocialLinks>
           {/* Add Social Media Icons Here */}
         </SocialLinks>
+        <FooterText>© Yauvanchakra Pvt. Ltd. All right reserved.</FooterText>
       </Footer>
     </Container>
   );
@@ -116,7 +261,6 @@ const Nav = styled.nav`
 const NavLink = styled.a`
   text-decoration: none;
   color: #543c33;
-  font-weight: bold;
 `;
 
 const HeroSection = styled.section`
@@ -173,10 +317,7 @@ const ChakrasSection = styled.section`
 `;
 
 const ChakraIcons = styled.div`
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 20px;
+ 
 `;
 
 const WaitlistSection = styled.section`
