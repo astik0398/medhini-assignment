@@ -257,7 +257,6 @@ state, guiding you towards a clearer understanding of your wellness journey.
       <Footer>
         <FooterText>Made with ❤️ in India</FooterText>
         <SocialLinks>
-          {/* Add Social Media Icons Here */}
         </SocialLinks>
         <FooterText>© Yauvanchakra Pvt. Ltd. All right reserved.</FooterText>
       </Footer>
