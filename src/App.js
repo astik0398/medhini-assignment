@@ -10,6 +10,7 @@ import image_05 from './assets/Be_Athah_x_Website_Design_page-0001_05-removebg-p
 import image_06 from './assets/Be_Athah_x_Website_Design_page-0001_06-removebg-preview.png'
 import image_07 from './assets/Be_Athah_x_Website_Design_page-0001_07-removebg-preview.png'
 import image_08 from './assets/Be_Athah_x_Website_Design_page-0001_08-removebg-preview.png'
+import heart from './assets/heart.svg'
 import './App.css'
 
 const App = () => {
@@ -38,7 +39,7 @@ state, guiding you towards a clearer understanding of your wellness journey.
         <Button>Unwind and Assess</Button>
       </ContentSection>
 
-      <ChakrasSection>
+      <ChakrasSection >
   <SectionTitle style={{color:'white'}}>The 7 Chakras</SectionTitle>
   
   <Description style={{width:'80%', marginBottom: '40px'}}>
@@ -55,6 +56,7 @@ state, guiding you towards a clearer understanding of your wellness journey.
         width: "400px",
         height: "400px",
         margin: "0 auto",
+       borderRadius:'50%'
       }}
     >
       <div
@@ -66,7 +68,7 @@ state, guiding you towards a clearer understanding of your wellness journey.
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          top: "0",
+          top: "-30px",
           left: "50%",
           transform: "translateX(-50%)",
         }}
@@ -82,8 +84,8 @@ state, guiding you towards a clearer understanding of your wellness journey.
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          top: "15%",
-          right: "0",
+          top: "8%",
+          right: "10px",
         }}
       >
         <img className='chakras' width={'120px'} height={'120px'} src={image_03}/>
@@ -98,7 +100,7 @@ state, guiding you towards a clearer understanding of your wellness journey.
           justifyContent: "center",
           alignItems: "center",
           top: "50%",
-          right: "0",
+          right: "-30px",
           transform: "translateY(-50%)",
         }}
       >
@@ -114,8 +116,8 @@ state, guiding you towards a clearer understanding of your wellness journey.
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          bottom: "15%",
-          right: "0",
+          bottom: "5%",
+          right: "10px",
         }}
       >
          <img className='chakras' width={'150px'} height={'120px'} src={image_05}/>
@@ -129,7 +131,7 @@ state, guiding you towards a clearer understanding of your wellness journey.
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          bottom: "0",
+          bottom: "-30px",
           left: "50%",
           transform: "translateX(-50%)",
         }}
@@ -145,8 +147,8 @@ state, guiding you towards a clearer understanding of your wellness journey.
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          bottom: "15%",
-          left: "0",
+          bottom: "5%",
+          left: "10px",
         }}
       >
         <img className='chakras' width={'150px'} height={'120px'} src={image_07}/>
@@ -161,7 +163,7 @@ state, guiding you towards a clearer understanding of your wellness journey.
           justifyContent: "center",
           alignItems: "center",
           top: "50%",
-          left: "0",
+          left: "-50px",
           transform: "translateY(-50%)",
         }}
       >
@@ -176,8 +178,8 @@ state, guiding you towards a clearer understanding of your wellness journey.
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          top: "15%",
-          left: "0",
+          top: "8%",
+          left: "10px",
         }}
       >
         <img className='chakras' width={'150px'} height={'120px'} src={image_03}/>
@@ -255,7 +257,7 @@ state, guiding you towards a clearer understanding of your wellness journey.
       <hr/>
 
       <Footer>
-        <FooterText>Made with ❤️ in India</FooterText>
+        <FooterText style={{display:'flex', justifyContent:'center', alignItems:'center', gap:'5px'}}>Made with <img  width={'15px'} src={heart}/> in India</FooterText>
         <SocialLinks>
         </SocialLinks>
         <FooterText>© Yauvanchakra Pvt. Ltd. All right reserved.</FooterText>
@@ -267,7 +269,7 @@ state, guiding you towards a clearer understanding of your wellness journey.
 export default App;
 
 const Container = styled.div`
-  font-family: 'Arial, sans-serif';
+  font-family: 'Roboto';
   color: #543c33;
 `;
 
@@ -282,7 +284,7 @@ const Header = styled.header`
 
 const Logo = styled.h1`
   font-size: 24px;
-  font-family: 'Cursive, sans-serif';
+  font-family: 'Roboto';
 `;
 
 const Nav = styled.nav`
@@ -323,7 +325,7 @@ const Description = styled.p`
   font-size: 18px;
   margin-bottom: 20px;
   line-height: 1.6;
-  width: 50%;
+  width: 55%;
   margin: auto;
   margin-bottom: 20px;
 `;
@@ -409,7 +411,7 @@ const FooterColumn = styled.div`
 `;
 
 const ColumnTitle = styled.h4`
-  font-family: 'Sans-serif';
+  font-family: 'Roboto';
   font-weight: bold;
   font-size: 1rem;
   color: #8b5d4a;
@@ -418,7 +420,7 @@ const ColumnTitle = styled.h4`
 
 const ColumnLink = styled.a`
   display: block;
-  font-family: 'Sans-serif';
+  font-family: 'Roboto';
   font-size: 0.875rem;
   color: #8b5d4a;
   text-decoration: none;
