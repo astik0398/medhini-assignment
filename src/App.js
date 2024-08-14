@@ -1,4 +1,3 @@
-// App.js
 import React from 'react';
 import styled from 'styled-components';
 import poster from './assets/Be Athah x Website Design_page-0001.jpg'
@@ -11,6 +10,7 @@ import image_05 from './assets/Be_Athah_x_Website_Design_page-0001_05-removebg-p
 import image_06 from './assets/Be_Athah_x_Website_Design_page-0001_06-removebg-preview.png'
 import image_07 from './assets/Be_Athah_x_Website_Design_page-0001_07-removebg-preview.png'
 import image_08 from './assets/Be_Athah_x_Website_Design_page-0001_08-removebg-preview.png'
+import './App.css'
 
 const App = () => {
   return (
@@ -49,6 +49,7 @@ state, guiding you towards a clearer understanding of your wellness journey.
   </Description>
 
   <div
+  className='main-chakra'
       style={{
         position: "relative",
         width: "400px",
@@ -70,7 +71,7 @@ state, guiding you towards a clearer understanding of your wellness journey.
           transform: "translateX(-50%)",
         }}
       >
-        <img width={'120px'} height={'120px'} src={image_02}/>
+        <img className='chakras' width={'120px'} height={'120px'} src={image_02}/>
       </div>
       <div
         style={{
@@ -85,7 +86,7 @@ state, guiding you towards a clearer understanding of your wellness journey.
           right: "0",
         }}
       >
-        <img width={'120px'} height={'120px'} src={image_03}/>
+        <img className='chakras' width={'120px'} height={'120px'} src={image_03}/>
       </div>
       <div
         style={{
@@ -101,7 +102,7 @@ state, guiding you towards a clearer understanding of your wellness journey.
           transform: "translateY(-50%)",
         }}
       >
-        <img width={'150px'} height={'120px'} src={image_04}/>
+        <img className='chakras' width={'150px'} height={'120px'} src={image_04}/>
       </div>
       <div
         style={{
@@ -117,7 +118,7 @@ state, guiding you towards a clearer understanding of your wellness journey.
           right: "0",
         }}
       >
-         <img width={'150px'} height={'120px'} src={image_05}/>
+         <img className='chakras' width={'150px'} height={'120px'} src={image_05}/>
       </div>
       <div
         style={{
@@ -133,7 +134,7 @@ state, guiding you towards a clearer understanding of your wellness journey.
           transform: "translateX(-50%)",
         }}
       >
-        <img width={'150px'} height={'120px'} src={image_06}/>
+        <img className='chakras' width={'150px'} height={'120px'} src={image_06}/>
       </div>
       <div
         style={{
@@ -148,7 +149,7 @@ state, guiding you towards a clearer understanding of your wellness journey.
           left: "0",
         }}
       >
-        <img width={'150px'} height={'120px'} src={image_07}/>
+        <img className='chakras' width={'150px'} height={'120px'} src={image_07}/>
       </div>
       <div
         style={{
@@ -164,7 +165,7 @@ state, guiding you towards a clearer understanding of your wellness journey.
           transform: "translateY(-50%)",
         }}
       >
-        <img width={'150px'} height={'120px'} src={image_08}/>
+        <img className='chakras' width={'150px'} height={'120px'} src={image_08}/>
       </div>
       <div
         style={{
@@ -179,7 +180,7 @@ state, guiding you towards a clearer understanding of your wellness journey.
           left: "0",
         }}
       >
-        <img width={'150px'} height={'120px'} src={image_03}/>
+        <img className='chakras' width={'150px'} height={'120px'} src={image_03}/>
       </div>
       <div
         style={{
@@ -212,13 +213,45 @@ state, guiding you towards a clearer understanding of your wellness journey.
       </WaitlistSection>
 
       <hr/>
-      {/* <FooterLinks>
-          <FooterLink href="#">About Us</FooterLink>
-          <FooterLink href="#">Blogs</FooterLink>
-          <FooterLink href="#">Your Privacy</FooterLink>
-          <FooterLink href="#">Terms & Conditions</FooterLink>
-          <FooterLink href="#">Get in touch with us</FooterLink>
-        </FooterLinks> */}
+      <FooterContainer style={{display:'flex', justifyContent:'space-evenly'}}>
+      <Logo><img width={'200px'} src={logo}/></Logo>
+      <FooterRow>
+        <FooterColumn>
+          <ColumnTitle>Why Be Athah</ColumnTitle>
+          <ColumnLink href="#">About Us</ColumnLink>
+        </FooterColumn>
+        <FooterColumn>
+          <ColumnTitle>Resources</ColumnTitle>
+          <ColumnLink href="#">Blogs</ColumnLink>
+        </FooterColumn>
+        <FooterColumn>
+          <ColumnTitle>Company</ColumnTitle>
+          <ColumnLink href="#">Your Privacy</ColumnLink>
+          <ColumnLink href="#">Terms & Conditions</ColumnLink>
+          <ColumnLink href="#">Get in touch with us</ColumnLink>
+        </FooterColumn>
+        <FooterColumn>
+          <ColumnTitle>Follow Us: Be_Atha</ColumnTitle>
+          <SocialIcons>
+            <SocialIcon href="#">
+              <i className="fab fa-facebook-f"></i>
+            </SocialIcon>
+            <SocialIcon href="#">
+              <i className="fab fa-twitter"></i>
+            </SocialIcon>
+            <SocialIcon href="#">
+              <i className="fab fa-youtube"></i>
+            </SocialIcon>
+            <SocialIcon href="#">
+              <i className="fab fa-linkedin-in"></i>
+            </SocialIcon>
+            <SocialIcon href="#">
+              <i className="fab fa-instagram"></i>
+            </SocialIcon>
+          </SocialIcons>
+        </FooterColumn>
+      </FooterRow>
+    </FooterContainer>
       <hr/>
 
       <Footer>
@@ -347,6 +380,70 @@ const SignUpButton = styled(Button)`
 
   &:hover {
     background-color: #543c33;
+  }
+`;
+
+const FooterContainer = styled.footer`
+  background-color: #d4c4b5;
+  padding: 2rem;
+  text-align: center;
+`;
+
+const Subtitle = styled.div`
+  font-family: 'Serif';
+  font-size: 0.875rem;
+  color: #8b5d4a;
+  margin-bottom: 2rem;
+`;
+
+const FooterRow = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  gap: 50px;
+`;
+
+const FooterColumn = styled.div`
+  flex: 1;
+  min-width: 150px;
+  margin-bottom: 1rem;
+`;
+
+const ColumnTitle = styled.h4`
+  font-family: 'Sans-serif';
+  font-weight: bold;
+  font-size: 1rem;
+  color: #8b5d4a;
+  margin-bottom: 0.75rem;
+`;
+
+const ColumnLink = styled.a`
+  display: block;
+  font-family: 'Sans-serif';
+  font-size: 0.875rem;
+  color: #8b5d4a;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
+const SocialIcons = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+`;
+
+const SocialIcon = styled.a`
+  color: #8b5d4a;
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+  text-decoration: none;
+
+  &:hover {
+    color: #5c3f34;
   }
 `;
 
